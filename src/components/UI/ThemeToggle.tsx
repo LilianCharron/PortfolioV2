@@ -13,6 +13,7 @@ const ThemeToggle: React.FC = () => {
             onClick={toggleTheme}
             className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-warning hover:border-warning/50 transition-colors shadow-lg backdrop-blur-xl"
             title={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+            aria-label={`Changer pour le mode ${theme === 'light' ? 'sombre' : 'clair'}`}
         >
             <motion.div
                 initial={false}

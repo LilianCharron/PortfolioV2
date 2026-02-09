@@ -24,6 +24,7 @@ const Header: React.FC = () => {
         { name: 'CV', path: '/cv' },
         { name: 'Compétences', path: '/competences' },
         { name: 'Veille', path: '/veille' },
+        { name: 'Procédures', path: '/procedures' },
         {
             name: 'Stages',
             subLinks: [
@@ -77,6 +78,8 @@ const Header: React.FC = () => {
                     <button
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         className="p-2 text-white hover:text-warning transition-colors"
+                        aria-label={isMobileMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                        aria-expanded={isMobileMenuOpen}
                     >
                         {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
                     </button>
@@ -145,6 +148,9 @@ const NavDropdown = ({ label, subLinks }: { label: string, subLinks: { name: str
         >
             <button
                 className={`flex items-center gap-2 px-4 py-1.5 rounded-lg transition-all font-black text-[10px] uppercase tracking-[0.2em] group ${isOpen ? 'text-warning bg-warning/5' : 'text-muted hover:text-inherit'}`}
+                aria-haspopup="true"
+                aria-expanded={isOpen}
+                aria-label={`Menu déroulant ${label}`}
             >
                 {label}
                 <FaChevronDown className={`text-[8px] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />

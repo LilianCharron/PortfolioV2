@@ -25,10 +25,10 @@ const Footer: React.FC = () => {
 
                     <div className="flex flex-col items-center md:items-end gap-2">
                         <div className="flex items-center gap-6">
-                            <a href="https://github.com/votre-github" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-warning transition-colors">
+                            <a href="https://github.com/votre-github" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-warning transition-colors" aria-label="Lien vers mon profil GitHub">
                                 <FaGithub className="text-xl" />
                             </a>
-                            <a href="https://linkedin.com/in/votre-linkedin" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-warning transition-colors">
+                            <a href="https://linkedin.com/in/votre-linkedin" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-warning transition-colors" aria-label="Lien vers mon profil LinkedIn">
                                 <FaLinkedin className="text-xl" />
                             </a>
                         </div>
