@@ -5,8 +5,6 @@ import {
     FaShieldAlt, FaNetworkWired, FaServer,
     FaDocker, FaLock, FaWindows
 } from 'react-icons/fa';
-import { SiDocker } from 'react-icons/si';
-
 const Stage2: React.FC = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
 
