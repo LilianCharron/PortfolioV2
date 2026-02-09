@@ -1,4 +1,4 @@
-# Guide de Déploiement sur Debian 13 (Trixie)
+c# Guide de Déploiement sur Debian 13 (Trixie)
 
 Ce guide explique comment installer Docker et déployer votre portfolio sur un serveur Debian 13.
 
@@ -50,7 +50,23 @@ sudo docker compose up -d --build
 Votre site est maintenant accessible sur le port **12347** :
 `http://<IP_DE_VOTRE_SERVEUR>:12347`
 
+## 6. Activation du HTTPS (Optionnel)
+
+Le projet inclut une configuration **Caddy** pour obtenir des certificats SSL (Let's Encrypt) automatiquement.
+
+1.  **Avoir un nom de domaine** : Faites pointer votre domaine (ex: `portfolio.lilian.com`) vers l'IP de votre serveur.
+2.  **Configurer le domaine** :
+    *   Ouvrez le fichier `Caddyfile`.
+    *   Remplacez `votre-domaine.com` par votre vrai domaine.
+3.  **Activer les services** :
+    *   Dans `docker-compose.yml`, décommentez la section `caddy`.
+    *   Commentez ou supprimez la section `ports` du service `portfolio` (Caddy s'occupe de l'exposition sur les ports 80/443).
+4.  **Redémarrer** :
+    ```bash
+    sudo docker compose up -d --build
+    ```
+
 ## Commandes utiles
 - **Voir les logs** : `sudo docker compose logs -f`
 - **Arrêter le site** : `sudo docker compose down`
-- **Taille de l'image** : `sudo docker images`
+- **Logs Caddy** : `sudo docker compose logs -f caddy`

@@ -1,7 +1,30 @@
 services:
   portfolio:
     build: .
-    ports:
-      - "12347:80"
     restart: always
     container_name: lilian-portfolio
+    # No ports exposed directly to host if using Caddy below
+    # ports:
+    #   - "12347:80"
+
+  # Pour activer le HTTPS automatique avec Caddy :
+  # 1. Décommentez les lignes ci-dessous
+  # 2. Remplacez 'votre-domaine.com' par votre vrai domaine
+  # 3. Supprimez (ou commentez) la section 'ports' du service 'portfolio' ci-dessus
+  #
+  # caddy:
+  #   image: caddy:latest
+  #   restart: always
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./Caddyfile:/etc/caddy/Caddyfile
+  #     - caddy_data:/data
+  #     - caddy_config:/config
+  #   depends_on:
+  #     - portfolio
+
+volumes:
+  caddy_data:
+  caddy_config:

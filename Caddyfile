@@ -1,0 +1,3 @@
+votre-domaine.com {
+    reverse_proxy portfolio:80
+}
