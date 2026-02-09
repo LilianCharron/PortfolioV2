@@ -65,6 +65,9 @@ Le projet inclut une configuration **Caddy** pour obtenir des certificats SSL (L
     ```bash
     sudo docker compose up -d --build
     ```
+5.  **Vérification** :
+    Votre site sera accessible en HTTPS sur le port 12347 :
+    `https://liliancharron.fr:12347`
 
 ## Commandes utiles
 - **Voir les logs** : `sudo docker compose logs -f`
