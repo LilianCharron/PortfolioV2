@@ -52,7 +52,15 @@ Votre site est maintenant accessible sur le port **12347** :
 
 ## 6. Activation du HTTPS (Optionnel)
 
-Le projet inclut une configuration **Caddy** pour obtenir des certificats SSL (Let's Encrypt) automatiquement.
+> [!IMPORTANT]
+> **Règle d'or du Certificat (Let's Encrypt)** :
+> Pour que Caddy puisse obtenir un certificat, votre serveur **DOIT** être joignable sur le **port 80** depuis l'extérieur (le temps de la validation).
+>
+> **Dans votre cas (Proxy/NAT successifs)** :
+> 1. Redirigez le port **12347** (Public -> 192.168.1.1 -> 192.168.1.2).
+> 2. Redirigez aussi le port **80** (Public -> 192.168.1.1 -> 192.168.1.2) pour permettre la validation ACME.
+
+Le projet inclut une configuration **Caddy** pour obtenir des certificats SSL automatiquement.
 
 1.  **Avoir un nom de domaine** : Faites pointer votre domaine (ex: `portfolio.lilian.com`) vers l'IP de votre serveur.
 2.  **Configurer le domaine** :
