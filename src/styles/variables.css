@@ -1,0 +1,33 @@
+:root {
+    /* Common Accents (Constant across themes) */
+    --color-warning: #fbbf24;
+    --color-warning-muted: rgba(251, 191, 36, 0.4);
+
+    /* Dark Theme (Default) */
+    --color-bg: #0E2841;
+    --color-bg-alt: #0b1e32;
+    --color-text: #ffffff;
+    --color-text-muted: rgba(255, 255, 255, 0.5);
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-glass: rgba(15, 23, 42, 0.6);
+    --color-glass-border: rgba(255, 255, 255, 0.1);
+
+    --transition-theme: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
+
+[data-theme='light'] {
+    --color-bg: #ece8d9;
+    --color-bg-alt: #dfdbc8;
+    --color-text: #1a1916;
+    --color-text-muted: #6b685e;
+    --color-border: rgba(26, 25, 22, 0.15);
+    --color-glass: rgba(236, 232, 217, 0.75);
+    --color-glass-border: rgba(26, 25, 22, 0.1);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color var(--transition-theme), color var(--transition-theme);
+}
