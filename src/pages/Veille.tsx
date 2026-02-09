@@ -88,7 +88,7 @@ const Veille: React.FC = () => {
                                 <FaMicrochip className="animate-pulse" /> Research Subject ID: 882
                             </motion.div>
 
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-none">
+                            <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-none">
                                 PAPER<span className="text-transparent bg-clip-text bg-gradient-to-br from-warning to-orange-500">MC</span>
                             </h1>
 

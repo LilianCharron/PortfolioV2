@@ -31,9 +31,9 @@ const Skills: React.FC = () => {
     ];
 
     return (
-        <section id="skills" className="py-40 relative overflow-hidden">
-            <div className="container mx-auto px-6 relative z-10">
-                <div className="flex flex-col items-center mb-24">
+        <section id="skills" className="py-20 md:py-40 relative overflow-hidden">
+            <div className="container mx-auto px-4 md:px-6 relative z-10">
+                <div className="flex flex-col items-center mb-16 md:mb-24">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
                         <FaMicrochip className="text-sm" /> Audit Readiness: 100%
                     </motion.div>
 
-                    <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-center leading-none uppercase">
+                    <h2 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tighter text-center leading-none uppercase">
                         SKILL <span className="text-transparent bg-clip-text bg-gradient-to-br from-warning to-sky-400">SCAN</span>
                     </h2>
                     <div className="h-[2px] w-48 bg-warning/30 mt-8 rounded-full" />
@@ -56,7 +56,7 @@ const Skills: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="p-10 rounded-[2.5rem] glass border border-theme hover:border-warning/30 transition-all duration-500 group relative overflow-hidden shadow-2xl"
+                            className="p-8 md:p-10 rounded-[2rem] md:rounded-[2.5rem] glass border border-theme hover:border-warning/30 transition-all duration-500 group relative overflow-hidden shadow-2xl"
                         >
                             <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
                                 <FaMicrochip size={50} />

@@ -134,7 +134,7 @@ const Projects: React.FC = () => {
                     />
                 </div>
 
-                <div className="flex overflow-x-auto md:grid md:grid-cols-2 gap-x-8 gap-y-16 lg:gap-x-12 max-w-5xl mx-auto pb-12 px-4 scrollbar-hide snap-x md:snap-none">
+                <div className="flex overflow-x-auto md:grid md:grid-cols-2 gap-x-8 gap-y-16 lg:gap-x-12 max-w-5xl mx-auto pb-12 px-2 md:px-4 scrollbar-hide snap-x md:snap-none">
                     {projects.map((project, index) => (
                         <motion.div
                             key={project.id}
@@ -142,7 +142,7 @@ const Projects: React.FC = () => {
                             whileInView={{ opacity: 1, scale: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
                             transition={{ duration: 1, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                            className={`flex-shrink-0 snap-center md:flex justify-center ${index % 2 !== 0 ? 'md:mt-40' : ''}`}
+                            className={`flex-shrink-0 snap-center md:flex justify-center px-2 md:px-0 ${index % 2 !== 0 ? 'md:mt-40' : ''}`}
                         >
                             <div className="relative group">
                                 <div className="absolute -inset-10 bg-gradient-to-br from-warning/10 via-sky-400/5 to-transparent rounded-[50px] blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />

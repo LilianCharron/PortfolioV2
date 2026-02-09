@@ -104,7 +104,7 @@ const CV: React.FC = () => {
                         transition={{ duration: 1.5, delay: 0.3, ease: "circOut" }}
                         className="h-[2px] bg-gradient-to-r from-transparent via-warning to-transparent mt-12 mb-4 rounded-full"
                     />
-                    <p className="text-muted text-[10px] font-black tracking-[0.5em] uppercase">Documenting professional evolution</p>
+                    <p className="text-muted text-[10px] font-black tracking-[0.3em] md:tracking-[0.5em] uppercase text-center">Documenting professional evolution</p>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -213,7 +213,7 @@ const CV: React.FC = () => {
                         <span className="text-white uppercase">Tech Stack</span>
                         <div className="hidden md:block w-12 h-0.5 bg-warning/30 rounded-full" />
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl px-4">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full max-w-5xl px-4">
                         <SkillCard
                             icon={<FaNetworkWired />}
                             title="Infrastructure"
@@ -294,9 +294,9 @@ const TimelineItem = ({ title, subtitle, date, desc, isSpecial }: any) => (
     <motion.div
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        className="ml-6 sm:ml-10 md:ml-24 relative group"
+        className="ml-4 sm:ml-10 md:ml-24 relative group"
     >
-        <div className={`absolute -left-[14px] sm:-left-[30px] md:-left-[64px] top-6 w-2.5 h-2.5 md:w-3.5 md:h-3.5 rounded-full border-[2px] md:border-[3px] border-page z-10 transition-transform duration-700 group-hover:scale-150 ${isSpecial ? 'bg-warning shadow-[0_0_20px_#fbbf24]' : 'bg-muted group-hover:bg-sky-400'}`} />
+        <div className={`absolute -left-[18px] sm:-left-[30px] md:-left-[64px] top-6 w-2.5 h-2.5 md:w-3.5 md:h-3.5 rounded-full border-[2px] md:border-[3px] border-page z-10 transition-transform duration-700 group-hover:scale-150 ${isSpecial ? 'bg-warning shadow-[0_0_20px_#fbbf24]' : 'bg-muted group-hover:bg-sky-400'}`} />
         <div className="glass rounded-[1rem] md:rounded-[1.5rem] p-4 md:p-6 hover:bg-warning/5 transition-all duration-700 group-hover:-translate-y-2 shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-warning/[0.02] to-transparent pointer-events-none" />
             <div className="flex flex-col sm:flex-row justify-between items-start gap-2 mb-3">

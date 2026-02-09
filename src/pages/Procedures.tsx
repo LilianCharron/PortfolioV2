@@ -52,7 +52,7 @@ const Procedures: React.FC = () => {
                             <FaCode className="animate-pulse" /> DOCUMENTATION TECHNIQUE
                         </motion.div>
 
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-none mb-6">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-none mb-6">
                             MES <span className="text-transparent bg-clip-text bg-gradient-to-br from-warning to-orange-500">PROCÉDURES</span>
                         </h1>
 

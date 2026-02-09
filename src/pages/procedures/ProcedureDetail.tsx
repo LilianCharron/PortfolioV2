@@ -329,9 +329,9 @@ const ProcedureDetail: React.FC = () => {
                                                         PreTag="div"
                                                         customStyle={{
                                                             margin: 0,
-                                                            padding: '1.5rem',
+                                                            padding: window.innerWidth < 640 ? '1rem' : '1.5rem',
                                                             background: 'rgba(0, 0, 0, 0.3)',
-                                                            fontSize: '0.875rem',
+                                                            fontSize: window.innerWidth < 640 ? '0.75rem' : '0.875rem',
                                                             lineHeight: '1.8',
                                                             borderRadius: 0,
                                                         }}

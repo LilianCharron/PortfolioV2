@@ -45,8 +45,8 @@ const Header: React.FC = () => {
             />
 
             <nav className="container mx-auto px-6 flex justify-between items-center relative">
-                <Link to="/" className="text-xl font-black tracking-tighter group flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg glass flex items-center justify-center group-hover:border-warning/50 transition-all overflow-hidden p-1 shadow-[0_0_15px_rgba(251,191,36,0.1)] group-hover:shadow-[0_0_20px_rgba(251,191,36,0.2)]">
+                <Link to="/" className="text-lg sm:text-xl font-black tracking-tighter group flex items-center gap-3">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg glass flex items-center justify-center group-hover:border-warning/50 transition-all overflow-hidden p-1 shadow-[0_0_15px_rgba(251,191,36,0.1)] group-hover:shadow-[0_0_20px_rgba(251,191,36,0.2)]">
                         <img src="/assets/img/LogoNavBar2.webp" alt="Logo" className="w-full h-full object-contain transition-all opacity-100" />
                     </div>
                     <span>

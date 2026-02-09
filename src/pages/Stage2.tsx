@@ -5,7 +5,7 @@ import {
     FaShieldAlt, FaNetworkWired, FaServer,
     FaDocker, FaLock, FaWindows
 } from 'react-icons/fa';
-import { SiPfsense, SiDocker, SiOpenvpn } from 'react-icons/si';
+import { SiDocker } from 'react-icons/si';
 
 const Stage2: React.FC = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
@@ -107,7 +107,7 @@ const Stage2: React.FC = () => {
                 </div>
 
                 {/* Main Content Sections */}
-                <div className="space-y-32">
+                <div className="space-y-20 md:space-y-32">
 
                     {/* Mission Architecture Section */}
                     <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -116,7 +116,7 @@ const Stage2: React.FC = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             className="space-y-8"
                         >
-                            <h2 className="text-3xl font-black tracking-tighter uppercase flex items-center gap-4">
+                            <h2 className="text-2xl md:text-3xl font-black tracking-tighter uppercase flex items-center gap-4">
                                 <span className="text-sky-500">01.</span> Infrastucture Lab
                             </h2>
                             <p className="text-muted text-lg leading-relaxed font-medium">
@@ -128,7 +128,7 @@ const Stage2: React.FC = () => {
                                 <TaskItem title="Network Simulation" desc="Réplication du réseau existant pour tester des règles de pare-feu complexes sans impact sur la production." />
                             </div>
                         </motion.div>
-                        <div className="glass border border-theme rounded-[2.5rem] p-8 aspect-video relative overflow-hidden group">
+                        <div className="glass border border-theme rounded-[2.5rem] p-6 md:p-8 aspect-video relative overflow-hidden group">
                             <div className="absolute inset-0 bg-gradient-to-br from-sky-500/10 to-transparent" />
                             <FaServer className="absolute -bottom-10 -right-10 text-sky-500/5 group-hover:scale-110 transition-transform duration-1000" size={300} />
                             <div className="relative z-10 flex flex-col h-full justify-center items-center text-center space-y-6">
@@ -145,19 +145,19 @@ const Stage2: React.FC = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="glass border border-theme rounded-[3rem] p-10 md:p-16 shadow-3xl relative overflow-hidden"
+                        className="glass border border-theme rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-16 shadow-3xl relative overflow-hidden"
                     >
                         <div className="absolute top-0 right-0 p-12 opacity-5 text-8xl">
                             <FaLock />
                         </div>
                         <div className="max-w-3xl">
-                            <h2 className="text-4xl font-black mb-8 tracking-tighter uppercase italic">
+                            <h2 className="text-3xl md:text-4xl font-black mb-6 md:mb-8 tracking-tighter uppercase italic">
                                 SÉCURISATION <span className="text-warning">VPN MFA</span>
                             </h2>
                             <p className="text-muted text-lg mb-12 leading-relaxed">
                                 Intégration de la solution Duo MFA avec pfSense et OpenVPN pour répondre aux nouvelles exigences de cybersécurité de l'entreprise.
                             </p>
-                            <div className="grid sm:grid-cols-2 gap-8">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-8">
                                 <div className="space-y-4">
                                     <h4 className="text-xs font-black uppercase tracking-widest text-warning">Technologies Scalées</h4>
                                     <div className="flex flex-wrap gap-2">
@@ -176,7 +176,7 @@ const Stage2: React.FC = () => {
                     </motion.div>
 
                     {/* Tools & Docker Section */}
-                    <div className="grid md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 text-left">
                         <ToolCard
                             icon={<FaDocker className="text-sky-500" />}
                             title="Docker Systems"
@@ -195,9 +195,9 @@ const Stage2: React.FC = () => {
                     </div>
 
                     {/* Weekly Timeline */}
-                    <div className="space-y-16">
-                        <h2 className="text-4xl font-black text-center tracking-tighter uppercase opacity-20">Mission Timeline</h2>
-                        <div className="grid lg:grid-cols-4 gap-8">
+                    <div className="space-y-12 md:space-y-16">
+                        <h2 className="text-3xl md:text-4xl font-black text-center tracking-tighter uppercase opacity-20">Mission Timeline</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-left">
                             <TimelineCard week="01" title="Environment" tasks={["AD Integration", "L2/L3 Switching", "pfSense Updates", "Poste Deployment"]} />
                             <TimelineCard week="02" title="Security" tasks={["OpenVPN MFA", "Duo Integration", "Radius Setup", "Migration Audit"]} />
                             <TimelineCard week="03" title="Infrastructure" tasks={["Hardware Sorting", "LAPS Deployment", "Firewall Analysis", "Network Scan"]} />
@@ -213,7 +213,7 @@ const Stage2: React.FC = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     className="mt-32 text-center"
                 >
-                    <div className="inline-block p-12 glass border border-theme rounded-[2.5rem] relative group shadow-3xl">
+                    <div className="inline-block p-8 md:p-12 glass border border-theme rounded-[2rem] md:rounded-[2.5rem] relative group shadow-3xl">
                         <div className="absolute inset-0 bg-gradient-to-t from-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                         <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter">System Ready</h3>
                         <p className="text-muted italic max-w-2xl mx-auto font-medium">

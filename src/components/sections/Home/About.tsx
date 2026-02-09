@@ -11,9 +11,9 @@ const About: React.FC = () => {
     ];
 
     return (
-        <section className="py-40 relative overflow-hidden">
+        <section className="py-20 md:py-40 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-                <div className="flex flex-col lg:flex-row gap-24 items-start">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
 
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -29,7 +29,7 @@ const About: React.FC = () => {
                             >
                                 [ SYSTEM_PROFILE_DATA ]
                             </motion.span>
-                            <h2 className="text-6xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+                            <h2 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
                                 DECODING THE <span className="text-warning italic">ARCHITECT</span>
                             </h2>
                         </div>
