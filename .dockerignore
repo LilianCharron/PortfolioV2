@@ -7,6 +7,7 @@ dist
 Dockerfile
 docker-compose.yml
 .eslintrc.cjs
-tsconfig.json
-vite.config.ts
+# Config files needed for build
+# tsconfig.json - removed from ignore
+# vite.config.ts - removed from ignore
 .vscode
