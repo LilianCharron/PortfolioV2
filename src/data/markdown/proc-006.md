@@ -62,25 +62,25 @@ Ouvrez votre panel **Duo Authentication Proxy Manager**.
 
 **Fichier Config Duo (authproxy.cfg) :**
 
-| Section | Paramètre | Description |
-| :--- | :--- | :--- |
-| **[ad_client]** | `host=172.31.10.14` | IP Serveur AD |
-| | `service_account_username=Administrateur` | Utilisateur de service |
-| | `service_account_password=******` | Mot de passe |
-| | `search_dn=DC=labolo,DC=local` | Domaine |
-| **[cloud]** | `ikey=DIPBX3CPVAGZcH21KIH` | Key Admin Panel Sync AD |
-| | `skey=AvSfAtDIwaRHCbhAAXLL...` | Skey Admin Panel Sync AD |
-| | `api_host=api-4c853da5.duosecurity.com` | API Duo Secure AD |
-| **[radius_server_auto]** | `ikey=DI505STC68OM34VY318UZ` | Key Radius |
-| | `skey=sR2If6094cxH0WfCDLJyObMR...` | Skey Radius |
-| | `api_host=api-4c853da5.duosecurity.com` | API Duo Secure Radius |
-| | `radius_ip_1=172.31.1.253` | IP Interface PFSense |
-| | `radius_secret_1=****************` | Shared Secret avec PFSense |
-| | `failmode=secure` | Mode de sécurisation |
-| | `client=ad_client` | Client AD référence |
-| | `port=1812` | Port RADIUS |
+| Section                  | Paramètre                                 | Description                |
+| :----------------------- | :---------------------------------------- | :------------------------- |
+| **[ad_client]**          | `host=172.31.10.14`                       | IP Serveur AD              |
+|                          | `service_account_username=Administrateur` | Utilisateur de service     |
+|                          | `service_account_password=******`         | Mot de passe               |
+|                          | `search_dn=DC=labolo,DC=local`            | Domaine                    |
+| **[cloud]**              | `ikey=DIPBX3CPVAGZcH21KIH`                | Key Admin Panel Sync AD    |
+|                          | `skey=AvSfAtDIwaRHCbhAAXLL...`            | Skey Admin Panel Sync AD   |
+|                          | `api_host=api-4c853da5.duosecurity.com`   | API Duo Secure AD          |
+| **[radius_server_auto]** | `ikey=DI505STC68OM34VY318UZ`              | Key Radius                 |
+|                          | `skey=sR2If6094cxH0WfCDLJyObMR...`        | Skey Radius                |
+|                          | `api_host=api-4c853da5.duosecurity.com`   | API Duo Secure Radius      |
+|                          | `radius_ip_1=172.31.1.253`                | IP Interface PFSense       |
+|                          | `radius_secret_1=****************`        | Shared Secret avec PFSense |
+|                          | `failmode=secure`                         | Mode de sécurisation       |
+|                          | `client=ad_client`                        | Client AD référence        |
+|                          | `port=1812`                               | Port RADIUS                |
 
-> *Retrouvez vos clés Syncro AD dans : User > External Directories*
+> _Retrouvez vos clés Syncro AD dans : User > External Directories_
 
 ![[L] Tableau de configuration authproxy.cfg](/assets/img/procedures/vpn-mfa/configDUoproxy.png)
 
@@ -132,7 +132,7 @@ Allez ensuite sur **Client Export** afin de récupérer le client en télécharg
 
 ![[M] Interface Client Export avec options de téléchargement](/assets/img/procedures/vpn-mfa/pfsenseconfig6.png)
 
-Après le lancement du `.ovpn`, vous aurez une nouvelle connexion sur votre client OpenVPN. 
+Après le lancement du `.ovpn`, vous aurez une nouvelle connexion sur votre client OpenVPN.
 Lancez la connexion, entrez votre Mail et votre mot de passe. Vous recevrez un push ; une fois accepté, la connexion VPN s'établira.
 
 **Interface Client Windows :**

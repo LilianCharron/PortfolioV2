@@ -10,6 +10,7 @@ Pour respecter les bonnes pratiques de développement, voici la procédure à su
 
 1. **Créer une nouvelle branche** :
    Donnez à la branche un nom descriptif (ex: `feat-design-update` ou `fix-navigation`).
+
    ```bash
    git checkout -b <nom-de-la-branche>
    ```
@@ -21,6 +22,7 @@ Pour respecter les bonnes pratiques de développement, voici la procédure à su
    Testez visuellement ou avec des tests automatisés.
 
 4. **Commit les changements** :
+
    ```bash
    git add .
    git commit -m "feat/fix: description des changements"
@@ -34,21 +36,25 @@ Pour respecter les bonnes pratiques de développement, voici la procédure à su
 ## Fusion (Merge)
 
 6. **Passer sur la branche principale** :
+
    ```bash
    git checkout master  # ou main selon le dépôt
    ```
 
 7. **Récupérer les derniers changements** :
+
    ```bash
    git pull origin master
    ```
 
 8. **Fusionner la branche de fonctionnalité** :
+
    ```bash
    git merge <nom-de-la-branche>
    ```
 
 9. **Pousser le résultat final** :
+
    ```bash
    git push origin master
    ```

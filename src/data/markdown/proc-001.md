@@ -8,6 +8,7 @@ Ce guide complet vous accompagne dans la mise en place d'un serveur DHCP robuste
 > Le Dynamic Host Configuration Protocol (DHCP) est un protocole permettant d'attribuer automatiquement des adresses IP aux équipements réseau.
 
 ### Avantages
+
 - Gestion centralisée des adresses IP
 - Automatisation de la configuration réseau
 - Réduction des erreurs de configuration

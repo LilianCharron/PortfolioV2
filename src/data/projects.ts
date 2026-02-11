@@ -1,58 +1,65 @@
 export interface Project {
-    id: string;
-    title: string;
-    description: string;
-    fullDescription: string[];
-    image: string;
-    technologies: string[];
-    link?: string;
+  id: string;
+  title: string;
+  description: string;
+  fullDescription: string[];
+  image: string;
+  technologies: string[];
+  link?: string;
 }
 
 export const projects: Project[] = [
-    {
-        id: "bts1",
-        title: "Projet BTS 1ère année",
-        description: "Infrastructure réseau complète WAN/DMZ/LAN.",
-        fullDescription: [
-            "Dans le cadre de ma première année de BTS SIO, j’ai conçu une infrastructure réseau complète composée d’un routeur WAN/DMZ et d’un routeur DMZ/LAN.",
-            "La DMZ héberge un serveur web connecté à une base de données interne, tandis que le LAN intègre un serveur Samba Active Directory et un poste client Windows administré.",
-            "Des règles NAT et de sécurité ont été mises en place pour garantir l’isolation, la fiabilité et la protection du réseau."
-        ],
-        image: "/assets/img/project_networking.png",
-        technologies: ["Réseau", "Linux", "Windows Server", "Samba", "NAT", "Firewall"]
-    },
-    {
-        id: "charte",
-        title: "Charte Graphique",
-        description: "Conception d'une identité visuelle complète.",
-        fullDescription: [
-            "J’ai conçu une charte graphique complète pour assurer la cohérence visuelle et l’identité professionnelle de mon site web.",
-            "Elle définit les couleurs, typographies et styles d’interface utilisés, afin de garantir une présentation claire, moderne et harmonieuse."
-        ],
-        image: "/assets/img/project_web_design.png",
-        technologies: ["Design", "UI/UX", "CSS", "Photoshop/Figma"]
-    },
-    {
-        id: "minecraft",
-        title: "Serveur Minecraft",
-        description: "Administration d'un serveur PaperMC professionnel.",
-        fullDescription: [
-            "J’ai conçu et administré un serveur Minecraft professionnel basé sur PaperMC, accompagné d’un site web relié pour le suivi et la gestion du projet.",
-            "Le serveur est sécurisé, optimisé et maintenu à jour, avec une sélection de plugins assurant stabilité, performance et expérience utilisateur fluide."
-        ],
-        image: "/assets/img/project_minecraft.png",
-        technologies: ["Linux", "Java", "PaperMC", "Web", "Administration Système"],
-        link: "https://valdrum.fr:12347/Apropos.php"
-    },
-    {
-        id: "counter",
-        title: "Compteur JavaScript",
-        description: "Projet interactif d'apprentissage du DOM.",
-        fullDescription: [
-            "J’ai réalisé un petit projet personnel en JavaScript consistant à créer un compteur interactif. Ce projet m’a permis de m’exercer à la manipulation du DOM, à la gestion des événements et à l’actualisation dynamique d’éléments sur une page web.",
-            "C’est un exercice simple mais formateur, que j’ai appris grâce à la plateforme Scrimba, et qui m’a aidé à renforcer mes bases en développement front-end."
-        ],
-        image: "/assets/img/project_counter.png",
-        technologies: ["JavaScript", "HTML", "CSS", "DOM"]
-    }
+  {
+    id: 'bts1',
+    title: 'Infrastructure Réseau',
+    description: 'Mise en place d\'une architecture réseau WAN/DMZ/LAN complète.',
+    fullDescription: [
+      'Conception d\'une infrastructure réseau composée d\'un routeur WAN/DMZ et d\'un routeur DMZ/LAN.',
+      'La DMZ héberge un serveur web avec base de données. Le LAN intègre Active Directory et un poste client Windows.',
+      'Configuration de règles NAT et pare-feu pour assurer la sécurité et l\'isolation des zones.',
+    ],
+    image: '/assets/img/project_networking.png',
+    technologies: ['Réseau', 'Linux', 'Windows Server', 'Active Directory', 'Firewall'],
+    link: '/projects/infrastructure-reseau',
+  },
+  {
+    id: 'charte',
+    title: 'Charte Graphique',
+    description: 'Création de l\'identité visuelle du portfolio.',
+    fullDescription: [
+      'Conception d\'une charte graphique pour définir l\'identité visuelle du site.',
+      'Définition des couleurs, typographies et composants UI pour garantir une cohérence globale.',
+    ],
+    image: '/assets/img/project_web_design.png',
+    technologies: ['Design', 'UI/UX', 'CSS', 'Figma'],
+    link: '/projects/charte-graphique',
+  },
+  {
+    id: 'minecraft',
+    title: 'Serveur Valdrum',
+    description: 'Serveur Minecraft Survival optimisé avec 20+ plugins (100 joueurs max).',
+    fullDescription: [
+      'Serveur PaperMC 1.21+ en mode Survival Hard avec whitelist, configuré pour 100 joueurs simultanés.',
+      'Gestion des permissions avec LuckPerms, protection WorldGuard, économie Vault, et téléportation EssentialsX.',
+      'Features: NPCs (Citizens/FancyNpcs), multi-mondes (Multiverse), shop GUI, voice chat, et arènes PvP.',
+      'Optimisations: entity-activation-range ajustée, hopper-check optimisé, chunks pré-générés (Chunky).',
+      'Monitoring: TCPShield (DDoS protection), Spark (profiling), bStats (analytics).',
+    ],
+    image: '/assets/img/project_minecraft.png',
+    technologies: ['PaperMC', 'Linux', 'LuckPerms', 'WorldGuard', 'EssentialsX', 'Multiverse', 'Citizens'],
+    link: '/projects/valdrum',
+  },
+  {
+    id: 'portfolio',
+    title: 'Portfolio Web',
+    description: 'Développement de ce site portfolio avec React.',
+    fullDescription: [
+      'Création d\'un portfolio professionnel avec React et TypeScript.',
+      'Intégration d\'animations, d\'un système de thème et de composants interactifs.',
+      'Déploiement avec Docker et configuration HTTPS via Caddy.',
+    ],
+    image: '/assets/img/project_portfolio.png',
+    technologies: ['React', 'TypeScript', 'Docker', 'Caddy'],
+    link: 'https://lilian-charron.fr:12347',
+  },
 ];

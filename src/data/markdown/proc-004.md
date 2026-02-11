@@ -63,6 +63,7 @@ DBName=zabbix
 DBUser=zabbix
 DBPassword=MOT_DE_PASSE_FORT
 ```
+
 > ⚠️ Ne pas laisser DBPassword commenté !
 
 ## 8. Démarrage des Services
@@ -75,5 +76,6 @@ systemctl enable zabbix-server zabbix-agent apache2
 ## 9. Accès Web
 
 URL : `http://IP_DU_SERVEUR/zabbix`
+
 - **Utilisateur** : Admin
 - **Mot de passe** : zabbix

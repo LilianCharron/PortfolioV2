@@ -5,6 +5,7 @@ Ce document décrit la procédure fonctionnelle pour installer OpenProject sur u
 ## 1. Prérequis
 
 ### Configuration minimale
+
 - **OS** : Debian 12 (Bookworm)
 - **Accès** : root ou sudo
 - **CPU** : 2 vCPU minimum
@@ -31,6 +32,7 @@ apt install -y apt-transport-https ca-certificates curl gnupg wget
 OpenProject utilise un dépôt APT hébergé via Packager.io.
 
 ### 3.1 Import de la clé GPG
+
 Clé utilisée : `B6D583CCBD33EEB8`
 
 ```bash
@@ -43,6 +45,7 @@ ls -lh /usr/share/keyrings/openproject.gpg
 ```
 
 ### 3.2 Ajout du dépôt APT
+
 Créer le fichier source :
 
 ```bash
@@ -50,6 +53,7 @@ nano /etc/apt/sources.list.d/openproject.list
 ```
 
 Ajouter le contenu suivant :
+
 ```text
 deb [signed-by=/usr/share/keyrings/openproject.gpg] https://dl.packager.io/srv/deb/opf/openproject/stable/17/debian 12 main
 ```
@@ -63,6 +67,7 @@ apt update
 # Installation du paquet
 apt install -y openproject
 ```
+
 > Le paquet installe automatiquement PostgreSQL et prépare le serveur web.
 
 ## 5. Configuration Initiale
@@ -72,7 +77,9 @@ Lancer l'assistant de configuration :
 ```bash
 openproject configure
 ```
+
 L'assistant vous guidera pour :
+
 - Choix HTTP/HTTPS
 - Configuration du domaine/IP
 - Serveur web (Apache/Nginx)

@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Portfolio Antigravity 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans le dépôt de mon portfolio professionnel. Ce projet est conçu avec une architecture moderne, performante et maintenable.
 
-Currently, two official plugins are available:
+## 🎯 Points Forts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Performance** : Utilisation de Vite pour un build ultra-rapide.
+- **Qualité** : Tests unitaires avec Vitest et React Testing Library.
+- **Design** : Interface réactive avec Tailwind CSS et Framer Motion.
+- **Maintenabilité** : Documentation vivante et typage strict avec TypeScript.
 
-## React Compiler
+## 🛠️ Installation & Démarrage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prérequis
 
-## Expanding the ESLint configuration
+- Node.js (v18+)
+- npm ou yarn
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Développement
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+### Tests
+
+```bash
+# Lancer les tests une fois
+npm run test
+
+# Lancer les tests en mode watch
+npm run test:watch
+```
+
+### Build (Production)
+
+```bash
+npm run build
+```
+
+## 🏗️ Architecture
+
+Consultez [ARCHITECTURE.md](./ARCHITECTURE.md) pour un aperçu détaillé de la structure du projet et des diagrammes de composants.
+
+## 📜 Règles du Scout (Best Practices)
+
+Nous suivons les principes de "Code Parfait" :
+
+1. **Tests d'abord** : Toute fonctionnalité critique doit être testée.
+2. **DRY** : Pas de duplication inutile.
+3. **Documentation** : Le README et l'architecture sont toujours à jour.
+4. **Sécurité** : Pas de secrets en dur.
+
+---
+
+Fait avec ❤️ par Lilian Charron

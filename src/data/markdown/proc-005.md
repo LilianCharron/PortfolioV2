@@ -28,6 +28,7 @@ Server=IP_DU_SERVEUR_ZABBIX
 ServerActive=IP_DU_SERVEUR_ZABBIX
 Hostname=NOM_DU_SERVEUR
 ```
+
 > ⚠️ Le **Hostname** doit être strictement identique au nom déclaré dans l'interface Zabbix.
 
 ### Démarrage
@@ -45,6 +46,7 @@ Depuis le **serveur Zabbix** :
 apt install zabbix-get -y
 zabbix_get -s IP_DU_SERVEUR_SURVEILLÉ -k agent.ping
 ```
+
 > Résultat attendu : `1`
 
 ## 5. Déclaration dans Zabbix

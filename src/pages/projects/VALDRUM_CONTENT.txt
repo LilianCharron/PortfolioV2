@@ -1,0 +1,99 @@
+SECTIONS À INCLURE DANS LA PAGE VALDRUM :
+
+=== PARTIE 1 : HERO & INTRO ===
+- Hero avec titre massif
+- Stats 6 colonnes
+- Introduction 3 paragraphes détaillés
+- Bouton CTA vers site
+
+=== PARTIE 2 : TABLEAU COMPLET DES PLUGINS ===
+23 plugins organisés en 4 catégories :
+1. Core & Permissions (6 plugins)
+   - LuckPerms v5.5.2 - Description + config
+   - WorldGuard v7.0.14 - Description + config  
+   - World
+
+Edit v7.3.16 - Description
+   - Vault - Description
+   - Multiverse-Core v5.1.2 - Description
+   - EssentialsX v2.22.0 - Description
+
+2. Gameplay & Features (8 plugins)
+   - Citizens v2.0.39
+   - FancyNpcs v2.7.1
+   - ClaimChunk v0.0.25
+   - BetterRTP v3.6.13
+   - pvparena v2.0.0
+   - voicechat v2.5.35
+   - AxGraves v1.22.4
+   - ChestCommands
+
+3. Économie (3 plugins)
+   - EconomyShopGUI v6.14.5
+   - Fadah v3.2.0
+   - (Vault déjà listé)
+
+4. Administration & Performance (6 plugins)
+   - TCPShield v2.8.1
+   - Chunky v1.4.40
+   - Spark
+   - TAB v5.2.5
+   - bStats
+   - Multiverse-Portals v5.1.0
+
+=== PARTIE 3: ARCHITECTURE TECHNIQUE ===
+- Schéma architecture serveur
+- Config Java/PaperMC
+- Structure dossiers
+- Scripts shell
+- RCON setup
+
+=== PARTIE 4: CONFIGURATION SERVEUR ===
+server.properties détail:
+- difficulty=hard
+- max-players=100
+- view-distance=10
+- online-mode=true
+- whitelist=true
+- motd détaillé
+
+spigot.yml optimisations:
+- entity-activation-range
+- hopper timing
+- mob spawn rates
+- view distance
+
+=== PARTIE 5: SÉCURITÉ ===
+- TCPShield (DDoS protection)
+- Whitelist enforcement
+- LuckPerms permissions
+- RCON secured
+- Backup strategy
+
+=== PARTIE 6: TIMELINE PROJET ===
+Phase 1: Setup initial
+Phase 2: Core plugins
+Phase 3: Gameplay features
+Phase 4: Optimisation
+Phase 5: Production
+
+=== PARTIE 7: DÉFIS & SOLUTIONS ===
+- Performance avec 100 joueurs
+- Gestion multi-mondes
+- Économie équilibrée
+- Protection contre grief
+
+=== PARTIE 8: MONITORING ===
+- Spark profiling
+- bStats analytics
+- TPS monitoring
+- Crash reports
+
+=== PARTIE 9: FEATURES DÉTAILLÉES ===
+- Voice chat integration
+- NPC système
+- Auction house
+- Claim système
+- RTP system
+
+=== PARTIE 10: CTA FINALE ===

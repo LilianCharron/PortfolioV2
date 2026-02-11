@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lilian-charron.fr:12347/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
